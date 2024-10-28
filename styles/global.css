@@ -11,9 +11,6 @@
   --font-baloo: 'Baloo 2', sans-serif;
 
   --logo: 400 2.5rem var(--font-leckerli);
-  --logo-weight: 400;
-  --logo-size: 2.5rem;
-  --logo-family: 'Leckerli One', sans-serif;
 
   --heading-md: 700 1.75rem var(--font-baloo);
   --heading-sm: 700 1.125rem var(--font-baloo);
@@ -50,4 +47,9 @@
 
   --text-body: #c8cdd0;
   --text-heading: #f9f9f9;
+}
+body{
+  overflow: hidden;
+
+  background-color: var(--shape-background);
 }
