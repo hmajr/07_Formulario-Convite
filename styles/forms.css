@@ -1,0 +1,22 @@
+fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  border-style: none;
+
+  & .field-title{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    & svg{
+      color: var(--input-placeholder);
+    }
+
+    & legend{
+      font: var(--heading-sm);
+      color: var(--text-heading);
+    }
+  }
+}

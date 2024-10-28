@@ -19,7 +19,80 @@
       </div>
     </aside>
     <main>
-      <h2>Algum texto maneiro</h1>
+      <div class="main-container">
+        <h2>Crie seu evento</h2>
+        
+        <fieldset>
+          <div class="field-title">
+            <img src="./assets/icons/calendar.svg" alt="">
+            <legend>Sobre o evento</legend>
+          </div>
+          <div class="input-wrapper">
+            <label>Título</label>
+            <input 
+              type="text" 
+              name="event_name" 
+              id="event_name"
+              placeholder="Nome do evento"  
+            >
+          </div>
+          <div class="flex flex-2 gap-1">
+            <div class="input-wrapper">
+              <label>Início</label>
+              <input
+                type="datetime"
+                name="event_start"
+                id="event_start"
+                placeholder="DD/MM/AAAA, --:--"  
+              >
+            </div>
+            <div class="input-wrapper">
+              <label>Fim</label>
+              <input
+                type="datetime"
+                name="event_end"
+                id="event_end"
+                placeholder="DD/MM/AAAA, --:--"  
+              >
+            </div>
+          </div>
+          <div class="flex flex-2 gap-1">
+            <div class="input-wrapper">
+              <label>Tipo</label>
+              <div class="radio-wrapper">
+                <div class="radio-inner">
+                  <img src="./assets/icons/building-2.svg" alt="">
+                  <label for="event_type">Presencial</label>
+                  <input type="radio" name="event_type" id="event_offline">
+                </div>
+                <div class="radio-inner">
+                  <img src="./assets/icons/video.svg" alt="">
+                  <label for="event_type">Online</label>
+                  <input type="radio" name="event_type" id="event_online">
+                </div>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="event_local">Local</label>
+              <input
+                type="text"
+                name="event_local"
+                id="event_local"
+                placeholder="Link ou descrição"
+              >
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="event_description">Descrição</label>
+            <textarea
+              name="event_description"
+              id="event_description"
+              rows="10"
+              placeholder="Escreva sobre os detalhes do evento"  
+            ></textarea>
+          </div>
+        </fieldset>
+      </div>
     </main>
   </div>
 </body>

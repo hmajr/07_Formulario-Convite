@@ -1,0 +1,35 @@
+.input-wrapper{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+
+  margin-bottom: 1rem;
+
+  & label{
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  & input {
+    height: 3rem;
+    background-color: var(--input-base);
+    color: var(--text-heading);
+
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+
+    padding-inline: 1rem;
+  }
+  & textarea{
+    background-color: var(--input-base);
+    color: var(--text-heading);
+    
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+
+    padding: 1rem;
+  }
+
+}
