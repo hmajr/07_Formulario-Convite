@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* FONT FAMILY */
+  --font-leckerli: 'Leckerli One', sans-serif;
+  --font-open: 'Open Sans', sans-serif;
+  --font-baloo: 'Baloo 2', sans-serif;
+
+  --logo: 400 2.5rem var(--font-leckerli);
+  --logo-weight: 400;
+  --logo-size: 2.5rem;
+  --logo-family: 'Leckerli One', sans-serif;
+
+  --heading-md: 700 1.75rem var(--font-baloo);
+  --heading-sm: 700 1.125rem var(--font-baloo);
+
+  --body-md: 500 1rem var(--font-open); 
+  --body-sm: 500 .875rem var(--font-open);
+  --body-xs: 500 .75rem var(--font-open);
+  
+  /* COLORS */
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+
+  --color-purple: #B259FF;
+  --color-fuschia: #FF59F9;
+  --color-pink: #FF598B;
+  --color-orange: #FF8B59;
+  --color-yellow: #FFCD59;
+  --color-lime: #E1FF59;
+  --color-green: #59FF91;
+  --color-cyan: #59FFF9;
+  --color-navy: #6A59FF;
+
+  --color-danger: #ff5959;
+
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+}
