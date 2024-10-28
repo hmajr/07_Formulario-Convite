@@ -1,12 +1,13 @@
 #app-container{
   display: grid;
   grid-template-columns: 36% 64%;
+  gap: 1.25rem;
+
+  overflow: hidden;
 }
 aside{
-  position: fixed;
-
-  width: 100%;
-  height: 100%;
+  height: 100vh;
+  width: auto;
   padding: 2rem;
 
   background: url("../assets/img/background.png") no-repeat;
@@ -36,8 +37,20 @@ aside{
   }
 }
 main{
+  overflow: auto;
+
   display: flex;
   flex-direction: column;
+  gap: 2.5rem;
+  
+  padding: 3.75rem 8.125rem;
 
   background-color: var(--shape-body);
+
+  & h2{
+    font: var(--heading-md);
+    color: var(--text-heading);
+
+    margin-bottom: 2.5rem;
+  }
 }
