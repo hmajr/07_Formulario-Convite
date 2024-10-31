@@ -1,14 +1,14 @@
 .radio-wrapper{
   display: flex;
   gap: .125rem;
-
+  
   border: 1px solid var(--input-stroke);
   background-color: var(--input-base);
-
+  
   justify-content: space-around;
   
   padding: .25rem;
-
+  
   border: 1px solid var(--input-stroke);
   border-radius: .5rem;
 }
@@ -19,34 +19,47 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-
-  
+  height: 2.5rem;
   border: 1px solid transparent;
   border-radius: .25rem;
   
   background-color: var(--input-base);
-
+  
   & input{
     inset: 0;
     position: absolute;
-    opacity: 0;
+    border: none;
+    
     width: 100%;
+    height: auto;
+    
+    background-color: transparent;
   }
-  & label{
+  & label, svg{
+    z-index: 2;
     color: var(--text-body);
   }
-  & svg{
-    fill: var(--input-placeholder);
-  }
-
+  
   &:hover{
     background-color: var(--shape-hover);
-
+    
   }
+}
+input[type="radio"]:checked{
+  border-radius: .25rem;
+  background-color: var(--shape-button);
+
+  & + svg{
+    path{
+      fill: var(--brand-light);
+    }
+  }
+
+}
 .radio-circle{
   display: flex;
   justify-content: space-between;
-
+  
   & input{
     height: 2.5rem;
     width: 2.5rem;
