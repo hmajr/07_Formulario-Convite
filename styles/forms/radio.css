@@ -43,7 +43,54 @@
     background-color: var(--shape-hover);
 
   }
+.radio-circle{
+  display: flex;
+  justify-content: space-between;
+
+  & input{
+    height: 2.5rem;
+    width: 2.5rem;
+    
+    border: .25rem solid var(--shape-button);
+    border-radius: 100%;
+  }
+  
+  & input:hover{
+    border: .25rem solid var(--brand-hover);
+  }
+  
   & input:checked{
+    outline: 2px solid var(--brand-light);
+  }
+}
+#color_navy{
+  background-color: var(--color-navy);
+}
+#color_purple{
+  background-color: var(--color-purple);
+}
+#color_fuschia{
+  background-color: var(--color-fuschia);
+}
+#color_pink{
+  background-color: var(--color-pink);
+}
+#color_orange{
+  background-color: var(--color-orange);
+}
+#color_yellow{
+  background-color: var(--color-yellow);
+}
+#color_lime{
+  background-color: var(--color-lime);
+}
+#color_green{
+  background-color: var(--color-green);
+}
+#color_cyan{
+  background-color: var(--color-cyan);
+}
+
     background-color: var(--shape-hover);
   }
 
