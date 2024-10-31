@@ -34,5 +34,7 @@ input, textarea, select{
 
     padding: 1rem;
   }
-
+}
+fieldset + fieldset{
+  margin-top: 3rem;
 }
