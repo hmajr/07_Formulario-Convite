@@ -14,3 +14,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.divisor{
+  border: 1px solid var(--input-stroke);
+  margin-block: 2.5rem;
+}
