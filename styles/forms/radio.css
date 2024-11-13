@@ -1,5 +1,6 @@
 /* 
   TODO
+  [x] Fix selection cards image vanish
   [x] Fix card resize
   [x] Fix Type presencial/online can't select on svg/text click
   */
@@ -79,6 +80,7 @@
     outline: 2px solid var(--brand-light);
   }
 }
+
 #color_navy{
   background-color: var(--color-navy);
 }
@@ -136,9 +138,9 @@
   }
   & input:checked{
     outline: 2px solid var(--brand-light);
+    background-color: transparent;
   }
   & label{
     color: var(--text-heading);
   }
-
 }
