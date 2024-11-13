@@ -1,7 +1,13 @@
+/* 
+  TODO
+  [x] Fix not scrolling
+*/
 #app-container{
   display: grid;
   grid-template-columns: 36% 64%;
   gap: 1.25rem;
+  
+  height: 100vh;
 
   overflow: hidden;
 }
