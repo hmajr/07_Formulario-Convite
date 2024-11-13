@@ -63,3 +63,6 @@ svg{
     fill: var(--input-placeholder);
   }
 }
+a {
+  color: var(--brand-light);
+}
