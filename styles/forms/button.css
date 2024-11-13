@@ -1,0 +1,48 @@
+.button-inner{
+  display: grid;
+  justify-content: end;
+}
+.button{
+  display: flex;
+  gap: .75rem;
+
+  height: 3rem;
+  width: auto;
+
+  padding: .25rem 1.25rem;
+
+  justify-content: center;
+  align-items: center;
+
+  font: var(--body-md);
+  color: var(--text-heading);
+
+  border: none;
+  border-radius: .5rem;
+
+  & svg {
+    height: 1.5rem;
+    
+    path{
+      fill: white;
+    }
+  }
+}
+.primary{
+  background-color: var(--brand-dark);
+
+  flex: 0 1 auto;
+  
+  &:hover{
+    background-color: var(--brand-light);
+    
+  }
+}
+.secondary{
+  background-color: var(--shape-button);
+
+  &:hover{
+    background-color: var(--shape-hover);
+    
+  }
+}
