@@ -1,3 +1,7 @@
+/* 
+  TODO
+  [x] Fix Type presencial/online can't select on svg/text click
+  */
 .radio-wrapper{
   display: flex;
   gap: .125rem;
@@ -35,8 +39,7 @@
     
     background-color: transparent;
   }
-  & label, svg{
-    z-index: 2;
+  & label{
     color: var(--text-body);
   }
   
@@ -44,17 +47,16 @@
     background-color: var(--shape-hover);
     
   }
-}
-input[type="radio"]:checked{
-  border-radius: .25rem;
-  background-color: var(--shape-button);
+  &:has(:checked){
+    background-color: var(--shape-button);
+    border-radius: .25rem;
 
-  & + svg{
-    path{
-      fill: var(--brand-light);
+    svg{
+      path{
+        fill: var(--brand-light);
+      }
     }
   }
-
 }
 .radio-circle{
   display: flex;
