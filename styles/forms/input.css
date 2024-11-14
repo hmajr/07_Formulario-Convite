@@ -1,3 +1,7 @@
+/*
+  TODO
+  [x] Fix description row size 
+ */
 input, textarea, select{
   appearance: none;
 }
@@ -15,7 +19,7 @@ input, textarea, select{
     color: var(--text-body);
   }
 
-  & input {
+  & input[type="text"], input[type="datetime"], textarea {
     height: 3rem;
     background-color: var(--input-base);
     color: var(--text-heading);
@@ -24,15 +28,6 @@ input, textarea, select{
     border-radius: .5rem;
 
     padding-inline: 1rem;
-  }
-  & textarea{
-    background-color: var(--input-base);
-    color: var(--text-heading);
-    
-    border: 1px solid var(--input-stroke);
-    border-radius: .5rem;
-
-    padding: 1rem;
   }
 }
 fieldset + fieldset{
