@@ -11,7 +11,10 @@ fieldset{
     gap: .5rem;
 
     & svg{
-      color: var(--input-placeholder);
+      height: 1.5rem;
+      path{
+        fill: var(--input-placeholder);
+      }
     }
 
     & legend{
