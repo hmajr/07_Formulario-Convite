@@ -18,3 +18,10 @@
   border: 1px solid var(--input-stroke);
   margin-block: 2.5rem;
 }
+.grid-1-2{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.center{
+  align-items: center;
+}
